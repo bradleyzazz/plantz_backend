@@ -17,7 +17,13 @@ const getPlants = (req, res) => {
         if (err) {
             res.status(400).send(err);
         } else {
-            res.status(200).send(results.rows);
+            
+            let names = [];
+            results.rows.forEach(row => {
+                names.push(row.name)
+            });
+            console.log(names)
+            res.status(200).send(names);
         }
     });
 }   

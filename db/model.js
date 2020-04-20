@@ -25,10 +25,10 @@ const getPlants = (callback) => {
 // const removePhoto = (id, callback) => {
 //     const query = 'DELETE FROM photos WHERE id = $1';
 //     pool.query(query, [id], callback);
-}
+// }
 
 
 module.exports = {
     addPlant,
-    getPlants,
+    getPlants
 }
