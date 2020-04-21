@@ -31,7 +31,7 @@ const getPlants = (req, res) => {
 
 //delete plant
 const deletePlant = (req, res) => {
-    model.removePhoto(req.body.name, (err, results) => {
+    model.deletePlant(req.body.name, (err, results) => {
         if (err) {
             res.status(400).send(err);
         } else {
