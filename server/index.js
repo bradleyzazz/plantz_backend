@@ -13,11 +13,11 @@ app.use(bodyParser.json());
 // Plants
 app.get('/api/plants', Controller.getPlants)
 app.post('/api/plants', Controller.addPlant)
-// app.delete('/api/plants', Controller.deletePlant)
+app.delete('/api/plants', Controller.deletePlant)
 
 // Measurements
-// app.post('/api/measurements', Controller.getMeasurement)
-// app.post('/api/measurements', Controller.getMeasurement)
+app.get('/api/measurements', Controller.getMeasurements)
+app.post('/api/measurements', Controller.addMeasurement)
 // app.delete('/api/measurements', Controller.getMeasurement)
 
 app.listen(port, () => console.log(`Example app listening on port ${port}!`))
