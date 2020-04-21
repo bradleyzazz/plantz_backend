@@ -12,7 +12,7 @@ app.use(bodyParser.json());
 
 // Plants
 app.get('/api/plants', Controller.getPlants)
-// app.post('/api/plants', Controller.addPlant)
+app.post('/api/plants', Controller.addPlant)
 // app.delete('/api/plants', Controller.deletePlant)
 
 // Measurements

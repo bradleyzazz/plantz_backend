@@ -2,11 +2,11 @@ const model = require('../db/model.js')
 
 //create plant
 const addPlant = (req, res) => {
-    model.addPlant(req.body.url, req.body.propId, (err, results) => {
+    model.addPlant(req.body.name, (err, results) => {
         if (err) {
             res.status(400).send(err);
         } else {
-            res.status(200).end(`Successfully added photo`);
+            res.status(200).end(`Successfully added plant`);
         }
     })
 }
